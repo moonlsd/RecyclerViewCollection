@@ -13,7 +13,7 @@ import com.codentrick.recyclerviewcollection.R;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static final String[] SAMPLES = { "Simple RecyclerView", "OnClickListener" };
+    private static final String[] SAMPLES = { "Simple RecyclerView", "OnClickListener", "The Grid" };
 
     private RecyclerView mRecyclerView;
 
@@ -35,6 +35,8 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, SimpleActivity.class));
             } else if (pos == 1) {
                 startActivity(new Intent(MainActivity.this, OnClickListenerActivity.class));
+            } else if (pos == 2) {
+                startActivity(new Intent(MainActivity.this, GridActivity.class));
             }
         }
     };
